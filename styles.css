@@ -1,81 +1,70 @@
-@media screen and (max-width: 701px) {
-  pre.ascii-art{
-    font-size: 1.0em;
-  }
-  pre.summary {
-    font-size: 200%;
-  }
-}
-@media screen and (max-width: 601px) {
-  pre.ascii-art {
-    font-size: 0.8em;
-  }
-  pre.summary {
-    font-size: 150%;
-  }
-}
-@media screen and (max-width: 500px) {
-  pre.ascii-art {
-    font-size: 0.6em;
-  }
-  pre.summary {
-    font-size: 140%;
-  }
-}
-@media screen and (max-width: 350px) {
-  pre.ascii-art {
-    font-size: 0.4em;
-  }
-  pre.summary {
-    font-size: 100%;
-  }
+body, header, footer {
+  background-color: transparent;
 }
 
-.closing {
+.container {
+  padding-bottom: 100px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
   text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: lime; 
-}
-a:hover {
-    text-decoration: underline;
-    color: rgb(121, 238, 121);
+.menu li {
+  display: inline;
+  margin-right: 20px;
 }
 
-h1, 
-p {
-  color: white;
-  font-family: sans-serif;
-}
-h1 {
-  font-size: 2rem;
-  padding-top: 3rem;
-  font-family: sans-serif;
+.menu li:last-child {
+  margin-right: 0;
 }
 
-img {
-  max-width: 90%;
-  height: auto;
+.menu a {
+  color: lime;
+  text-decoration: none;
 }
 
-.summary {
-  color: white;
-  text-align: left;
-  font-size: 2rem;
+.menu a:hover {
+  text-decoration: underline;
+  color: #79ee79;
 }
 
-body {
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0;
+main {
+  padding-top: 50px; /* To ensure content is not hidden behind the fixed navigation */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
 }
 
 footer {
-  background: black;
-  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.closing, .credits {
+  color: white;
+}
+
+a {
+  color: lime;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00d700;
 }
 
 .container {
